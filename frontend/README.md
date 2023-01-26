@@ -1,46 +1,20 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project, i used Typescript, React, Mongodb, ESlint and Express Session Cookies instead of JWT tokens
 
-## Available Scripts
+In this project, you can Register, Login, Delete Note, Update Note and Create Note.
 
-In the project directory, you can run:
+And All the notes are protected by auth middleware. You can't see other users' notes and manipulate them.
 
-### `npm start`
+All the routes are protected. Also, users' session is expired in 1 hour. After 1 hour, you have to login again.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In addition, i used many error handling methods for almost all of the errors. Also, the errors that occur in the backend are designed to reflect
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+and inform the user on the client side.
 
-### `npm test`
+In the client part, react-bootstrap library is used.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+And Finally, for forms i used react form hook instead of formik and yup
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Mern App Video gif](https://user-images.githubusercontent.com/108582476/214945380-f1036cdd-f0f5-4b0c-bf2e-ad76d361a7a9.gif)
